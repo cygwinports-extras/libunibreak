@@ -1,0 +1,18 @@
+NAME="libunibreak"
+VERSION=1.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Unicode line- and word-breaking library"
+DESCRIPTION="Libunibreak is the successor of liblinebreak. It provides line
+breaking functionality according to Unicode 6.0.0 Standard Annex 14,
+Revision 26, and an implementation of the word breaking algorithm according to
+Unicode 6.0.0 Standard Annex 29, Revision 17. It is designed to be used in a
+generic text renderer."
+HOMEPAGE="http://vimgadgets.sourceforge.net/libunibreak/"
+SRC_URI="mirror://sourceforge/vimgadgets/libunibreak-${VERSION}.tar.gz"
+
+PKG_NAMES="libunibreak1 libunibreak-devel"
+libunibreak1_CONTENTS="usr/bin/cygunibreak-1.dll usr/share/doc/"
+libunibreak_devel_CONTENTS="usr/include/ usr/lib/"
+
+KEEP_LA_FILES="none"
